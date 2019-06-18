@@ -115,7 +115,12 @@
     blockquote {
         background-color: rgba(200, 200, 200, 0.3);
         border-left: 10px solid rgba(150, 150, 150, 0.5);
-        margin: 0;
-        padding: 10px 10px 10px 40px;
+        margin: 0 0 1em 0;
+        padding: 10px 10px 10px 20px;
+
+        >p:last-of-type {
+            margin-bottom: 0;
+        }
     }
+
 }
