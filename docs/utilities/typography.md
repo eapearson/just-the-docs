@@ -1,18 +1,20 @@
 ---
 layout: default
 title: Typography
-parent: Utilities
+parent: utilities
 nav_order: 4
 ---
 
 # Typography Utilities
+
 {: .no_toc }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ---
 
@@ -20,18 +22,18 @@ nav_order: 4
 
 Use the `.fs-1` - `.fs-10` to set an explicit font-size.
 
-| Class   | Small screen size `font-size`  | Large screen size `font-size` |
-|:--------|:-------------------------------|:------------------------------|
-| `.fs-1` | 9px                            | 10px                          |
-| `.fs-2` | 11px                           | 12px                          |
-| `.fs-3` | 12px                           | 14px                          |
-| `.fs-4` | 14px                           | 16px                          |
-| `.fs-5` | 16px                           | 18px                          |
-| `.fs-6` | 18px                           | 24px                          |
-| `.fs-7` | 24px                           | 32px                          |
-| `.fs-8` | 32px                           | 38px                          |
-| `.fs-9` | 38px                           | 42px                          |
-| `.fs-10`| 42px                           | 48px                          |
+| Class    | Small screen size `font-size` | Large screen size `font-size` |
+| :------- | :---------------------------- | :---------------------------- |
+| `.fs-1`  | 9px                           | 10px                          |
+| `.fs-2`  | 11px                          | 12px                          |
+| `.fs-3`  | 12px                          | 14px                          |
+| `.fs-4`  | 14px                          | 16px                          |
+| `.fs-5`  | 16px                          | 18px                          |
+| `.fs-6`  | 18px                          | 24px                          |
+| `.fs-7`  | 24px                          | 32px                          |
+| `.fs-8`  | 32px                          | 38px                          |
+| `.fs-9`  | 38px                          | 42px                          |
+| `.fs-10` | 42px                          | 48px                          |
 
 <div class="code-example" markdown="1">
 Font size 1
@@ -78,7 +80,8 @@ Font size 9
 {: .fs-9 }
 Font size 10
 {: .fs-10 }
-```
+
+````
 
 ## Font weight
 
@@ -105,17 +108,17 @@ Font weight 500
 {: .fw-500 }
 Font weight 700
 {: .fw-700 }
-```
+````
 
 ## Line height
 
 Use the `lh-` classes to explicitly apply line height to text.
 
-| Class         | `line-height` value  | Notes                         |
-|:--------------|:---------------------|:------------------------------|
-| `.lh-0`       | 0                    |                               |
-| `.lh-tight`   | 1.1                  | Default for headings          |
-| `.lh-default` | 1.4                  | Default for body (paragraphs) |
+| Class         | `line-height` value | Notes                         |
+| :------------ | :------------------ | :---------------------------- |
+| `.lh-0`       | 0                   |                               |
+| `.lh-tight`   | 1.1                 | Default for headings          |
+| `.lh-default` | 1.4                 | Default for body (paragraphs) |
 
 <div class="code-example" markdown="1">
 No Line height
@@ -129,6 +132,7 @@ Tight line height
 Default line height
 Default line height
 {: .fh-default }
+
 </div>
 ```markdown
 In Markdown, use the `{: }` wrapper to apply custom classes:
@@ -144,4 +148,7 @@ Tight line height
 Default line height
 Default line height
 {: .fh-default }
+
+```
+
 ```

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: UI Components
+slug: ui-components
 nav_order: 3
 has_children: true
 permalink: /docs/ui-components

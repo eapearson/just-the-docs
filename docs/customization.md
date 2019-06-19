@@ -1,21 +1,25 @@
 ---
 layout: default
 title: Customization
+slug: customization
 nav_order: 6
 ---
 
 # Customization
+
 {: .no_toc }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ---
 
 ## Color schemes
+
 {: .d-inline-block }
 
 New
@@ -26,12 +30,14 @@ Just the Docs supports two color schemes: light (default), and dark.
 To enable a color scheme, set the `color_scheme` parameter in your site's `_config.yml` file:
 
 #### Example
+
 {: .no_toc }
 
 ```yaml
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: "dark"
 ```
+
 <button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
 
 <script>
@@ -56,6 +62,7 @@ To customize your site’s aesthetic, open `_sass/custom/custom.scss` in your ed
 For example, to change the link color from the purple default to blue, open `_sass/custom/custom.css` and find the `$link-color` variable on line `50`. Uncomment it, and change its value to our `$blue-000` variable, or another shade of your choosing.
 
 #### Example
+
 {: .no_toc }
 
 ```scss
