@@ -79,16 +79,17 @@
 
     &.children {
         &::after {
-            content: 'v';
+            content: '>';
             position: absolute;
             right: 0;
+            top: 0;
             // background-color: pink;
         }
     }
 
     &.active.children {
         &::after {
-            content: '<';
+            content: 'v';
             position: absolute;
             right: 0;
             // background-color: pink;
