@@ -79,7 +79,7 @@
 
     &.children {
         &::after {
-            content: '>';
+            content: '▶';
             position: absolute;
             right: 0;
             top: 0;
@@ -89,7 +89,7 @@
 
     &.active.children {
         &::after {
-            content: 'v';
+            content: '▼';
             position: absolute;
             right: 0;
             // background-color: pink;
