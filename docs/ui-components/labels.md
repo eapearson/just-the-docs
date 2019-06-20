@@ -1,8 +1,4 @@
 ---
-layout: default
-title: Labels
-parent: ui-components
-nav_order: 3
 ---
 
 # Labels
@@ -50,4 +46,3 @@ Deprecated
 
 ```
 
-```

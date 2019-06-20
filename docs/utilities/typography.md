@@ -147,4 +147,3 @@ Default line height
 
 ```
 
-```

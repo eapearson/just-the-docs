@@ -3,13 +3,6 @@ Set up variables.
 {% endcomment %}
 {% assign page_path = page.url | remove_first: "/" | split: "/" %}
 {% assign page_path_length = page_path | size %}
-{% assign parent_index = page_path_length | minus: 1 %}
-{% assign page_parent = page_path[parent_index] %}
-{% assign grandparent_index = parent_index | minus: 1 %}
-{% assign page_grandparent = page_path[grandparent_index] %}
-{% if page_grandparent == 'docs' %}
-  {% assign page_grandparent = nil %}
-{% endif %}
 {% assign page_has_children = false %}
 {% if page_path.last == 'index.md' %}
   {% assign page_is_index = true %}
@@ -69,15 +62,24 @@ Set up variables.
         {% assign has_children = false %}
     {% endif %}
 
+
+    {% if include.slug_path.size == 0 %}
+        {% assign slug_prefix = "" %}
+    {% elsif include.slug_path.size == 1 %}
+        {% assign slug_prefix = include.slug_path[0] | append: "/" %}
+    {% else %}
+        {% assign slug_prefix = include.slug_path | join: "/" | append: "/" %}
+    {% endif %}
+   
+
     <li class="navigation-list-item{% if is_current %} active{% endif %}{% if is_open %} open{% endif %}{% if has_children %} children{% endif %}">
-        {% assign slug_prefix = include.slug_path | join: "/" %}
-        <a href="{{ site.baseurl }}/{{ slug_prefix }}/{{ slug }}" class="navigation-list-link{% if is_current %} active{% endif %}">
+        <a href="{{ site.baseurl }}/{{ slug_prefix }}{{ slug }}" class="navigation-list-link{% if is_current %} active{% endif %}">
             {{ item.label}}
         </a>
         {% if item.menu %}
             {% assign next_level = include.level | plus: 1 %}
-            {% assign next_slug_path = slug_path | concat: slug_list %}
-            {% include nav-child.html menu=item.menu level=next_level slug_path=next_slug_path %}
+            {% assign next_slug_path = include.slug_path | concat: slug_list %}
+               {% include nav-child.html menu=item.menu level=next_level slug_path=next_slug_path %}
         {% endif %}
     </li>
 {% endfor %}
