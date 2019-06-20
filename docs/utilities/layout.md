@@ -1,8 +1,4 @@
 ---
-layout: default
-title: Layout
-parent: utilities
-nav_order: 2
 ---
 
 # Layout Utilities

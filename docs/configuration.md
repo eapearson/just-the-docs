@@ -1,7 +1,4 @@
 ---
-layout: default
-title: Configuration
-slug: configuration
 nav_order: 2
 ---
 

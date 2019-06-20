@@ -1,8 +1,8 @@
 ---
-layout: default
-title: Markdown kitchen sink
 nav_order: 99
 ---
+
+# Markdown Kitchen Sink
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 

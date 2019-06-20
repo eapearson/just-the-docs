@@ -71,8 +71,8 @@
         display: none;
     }
 
-    &.active {
-        .navigation-list-child-list {
+    &.open {
+        >.navigation-list-child-list {
             display: block;
         }
     }
@@ -87,7 +87,7 @@
         }
     }
 
-    &.active.children {
+    &.open.children {
         &::after {
             content: '▼';
             position: absolute;

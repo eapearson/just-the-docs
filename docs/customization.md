@@ -1,7 +1,4 @@
 ---
-layout: default
-title: Customization
-slug: customization
 nav_order: 6
 ---
 

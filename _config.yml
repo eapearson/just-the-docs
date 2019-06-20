@@ -17,6 +17,7 @@ title: Just the Docs
 description: A Jekyll theme for documentation
 baseurl: "/just-the-docs/" # the subpath of your site, e.g. /blog
 url: "https://pmarsceill.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# source: docs
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
@@ -38,3 +39,39 @@ ga_tracking: UA-2709176-10
 
 plugins:
   - jekyll-seo-tag
+
+defaults:
+    -
+      scope:
+        path: "" 
+      values:
+        layout: default
+
+navigation:
+  menu:
+    - label: Home 
+      slug: index
+    - label: Docs
+      menu:
+        - label: Configuration
+        - slug: ui-components
+          label: UI Components 
+          menu: 
+            - label: Typography
+            - label: Buttons
+            - label: Labels
+            - label: Tables
+            - label: Lists
+            - label: Code
+        - label: Utilities 
+          menu: 
+              - label: Responsive Modifiers
+                slug: responsive-modifiers
+              - label: Layout
+              - label: Color
+              - label: Typography
+        - slug: navigation
+          label: Navigation Structure
+        - label: Customization
+        - label: Markdown Kitchen Sink
+          slug: markdown

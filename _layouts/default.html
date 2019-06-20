@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+{% assign x.y = "hi hi hi" %}
+
 <html lang="{{ site.lang | default: "en-US" }}">
 {% include head.html %}
 <body>
@@ -37,7 +39,7 @@
         </div>
       </div>
       <div class="main-content">
-        {% unless page.url == "/" %}
+        <!-- {% unless page.url == "/" %}
           {% if page.parent %}
             <nav class="breadcrumb-nav">
               <ol class="breadcrumb-nav-list">
@@ -51,7 +53,7 @@
               </ol>
             </nav>
           {% endif %}
-        {% endunless %}
+        {% endunless %} -->
         <div id="main-content" class="page-content" role="main">
           {{ content }}
 

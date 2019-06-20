@@ -1,8 +1,4 @@
 ---
-layout: default
-title: Typography
-parent: utilities
-nav_order: 4
 ---
 
 # Typography Utilities
