@@ -54,8 +54,7 @@ navigation:
     - label: Docs
       menu:
         - label: Configuration
-        - slug: ui-components
-          label: UI Components 
+        - label: UI Components 
           menu: 
             - label: Typography
             - label: Buttons
@@ -66,7 +65,6 @@ navigation:
         - label: Utilities 
           menu: 
               - label: Responsive Modifiers
-                slug: responsive-modifiers
               - label: Layout
               - label: Color
               - label: Typography
