@@ -39,7 +39,7 @@ Set up variables.
     and the navigation trail left by descending through the nav tree
     {% endcomment %}
     {% assign current_path_element = page_path[index] | split: "." %}
-    {% assign current_path_element[0] %}
+    {% assign current_path_element = current_path_element[0] %}
 
     {% comment %}
     Determine if this nav item is also the current page
